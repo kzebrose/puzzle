@@ -1,0 +1,7 @@
+create javascript file
+take input from form
+convert seconds to minutes and hours and days
+1) seconds /60 = minutes
+2) truncate minutes calculation
+3) minutes/60 = hours
+4) hours / 24 = days

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Puzzle Game</title>
+    <meta name="viewport" content="width=device-width">
+	<style>
+       h1 {text-align: center;}
+       h3 {text-align: center;  margin-left : 20px; margin-top: 0px; }
+       img { float: left; margin-left : 20px; margin-top: 0px; margin-right: 20px; }
+       canvas { float: left; margin-left : 20px; margin-top: 0px; }
+       /*hr { width: 30%; margin-left: auto; margin-right: auto; border: 3px solid lightbrown; }*/
+	   img.solution {display:none}
+	</style>
+    <link rel="stylesheet" href="pick.css" charset="utf-8" >
+    <script  src="pick.js" charset="utf-8" defer></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <!--link rel="icon" type="image/png" sizes="32x32" href="file:///C:/Users/kate/Documents/games/puzzle/top/images/favicon-32x32.png"-->
+    <!--link rel="icon" type="image/png" sizes="16x16" href="file:///C:/Users/kate/Documents/games/puzzle/top/images/favicon-16x16.png"-->
+    <link rel="manifest" href="/site.webmanifest">
+ </head>
+
+  <body id = "myID" style="background-color:rgb(255, 255, 255); margin: 20px; " >
+   <!-- note canvas initialized as tiny 4pixel x 4pixel -->
+   <!-- canvas id="myCanvas" style="border:1px solid rgb(51, 204, 51)" ></canvas -->	  
+   <!-- <canvas id="myCanvas" ></canvas>  -->	   
+    <h1>Puzzle</h1>
+	<div id= "instr">
+      <h2>Welcome <span id="initials">anon</span></h2>
+      <ul>
+	    <li>Merry Christmas!</li>
+		<li>And a Happy New Year!</li>
+        <li>Click Santa to start play</li>
+        <li>Santa will get jumbled</li>
+      </ul>
+      <b>How to Play a Puzzle</b>
+      <ul>
+        <li>Click to select a piece</li>
+        <li>Click another piece to swap the pieces</li>
+        <li>Click in the solved picture and move to next level</li>
+        <li>Click the IMAGE button to open the image in another tab</li>
+      </ul>
+      <div class="smallImages">
+       
+        <div class="second"><a><img src="images/ZebriChristmas.jpg" width="150px"
+		onclick="location.href='puzzle.html?puzzle=Zch&name='+newinitials;return false;"></a></div>
+		<div class="second"><a><img src="images/SantaKlimt.png" width="150px"
+		onclick="location.href='puzzle.html?puzzle=Skl&name='+newinitials;return false;"></a></div>
+
+      </div><!-- end smallImages -->
+    </div><!-- end instr -->
+
+	
+  </body>
+</html>

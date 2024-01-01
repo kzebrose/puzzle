@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Puzzle Game</title>
+    <meta name="viewport" content="width=device-width">
+	<style>
+       h1 {text-align: center;}
+       h3 {text-align: center; margin-left : 20px; margin-top: 0px; }
+       img { float: left; margin-left : 20px; margin-top: 0px; margin-right: 20px; }
+       canvas { float: left; margin-left : 20px; margin-top: 0px; }
+       hr { width: 30%; margin-left: auto; margin-right: auto; }
+    </style>
+	<script  src="matrix.js" charset="utf-8" defer></script>
+    <script  src="draw.js" charset="utf-8" defer></script>
+    <script  src="puzzle.js" charset="utf-8" defer></script>
+    <script  src="game.js" charset="utf-8" defer></script>
+    <link rel="stylesheet" href="puzzle.css">
+  </head>
+
+  <body id = "myID" style="background-color:rgb(175, 101, 140); margin: 10px; " >
+   <!-- note canvas initialized as tiny 4pixel x 4pixel -->
+   <!-- canvas id="myCanvas" style="border:1px solid rgb(78, 40, 45)" ></canvas -->	  
+   <canvas id="myCanvas" ></canvas>	    
+	<div id="status">status</div>
+	<div id="status2">status2</div>
+	<!--a id="mylead" href="myleaderboard.html">leaderboard</a-->
+    <!--div id="tableBorder"-->
+    <!-- table id="myMap"></table -->
+	<br>
+	<canvas id="myMatrix" ></canvas>
+	
+    <button id="imgID" onclick=window.open(timg.src)>Image</button>
+		
+    <table id="myTable">
+        <th>Level</th>
+        <th>Clicks</th>
+        <th>Num Pieces</th>
+        <th>Time</th>
+        <th>Score</th>
+    </table>
+	
+	<form id="form1" action="https://zebrose.com/kzgames/highscores/highscores.php" method="post" target="_blank" hidden>
+	  <label for="fname">Initials:</label><br>
+	  <input type="text" id="fname" name="fname" value=""><br>
+	  <label for="score">Score:</label><br>
+	  <input type="text" id="score" name="score" value=""><br>  
+	  <input type="submit" value="Submit">
+	</form> 
+
+    <br>
+	<br>
+	
+    <img id = "Gae" src="images/gaelle_playing_harp.jpg" hidden>
+    <img id = "Jos" src="images/JosGrid.jpg" hidden>
+    <img id = "Elf" src="images/ELF_LANDgame.jpg" hidden>
+    <img id = "Wed" src="images/AlecPhyllisWedding.jpg" hidden>
+    <img id = "Tst" src="images/TestCard.jpg" hidden>
+    <img id = "Vej" src="images/EmilyJoe.jpg" hidden>
+    <img id = "Bsq" src="images/Ball_Sq_Back_crop.png" hidden>
+	<img id = "Zch" src="images/ZebriChristmas.jpg" hidden>
+    <img id = "Skl" src="images/SantaKlimt.png" hidden>
+	<img id = "Jos2023" src="images/JosGrid.jpg" hidden>
+    <img id = "gf" src="frames/goldFrame1.png" hidden>
+    <img id = "gf2" src="frames/goldFrame2.png" hidden>
+    <img id = "gf3" src="frames/goldFrame3.png" hidden>
+    <img id = "gf4" src="frames/goldFrame4.png" hidden>
+    <img id = "gf5" src="frames/goldFrame5.png" hidden>
+    <img id = "pf" src="frames/pinkFrame.png" hidden>
+    <img id = "rf" src="frames/roseFrame.png" hidden>
+    <img id = "grf" src="frames/gradFrame.png" hidden>
+    <img id = "red" src="frames/redFrame.png" hidden>
+    <img id = "blu" src="frames/blueFrame.png" hidden>
+    <img id = "water" src="images/watermark.png" hidden>
+    <img id = "water12PT" src="images/watermark12PT.png" hidden>
+
+    <img  id="blue"  src="images/blue.jpg"  hidden>
+    <img  id="white" src="images/white.jpg" hidden>
+  </body>
+</html>

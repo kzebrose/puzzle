@@ -1,0 +1,36 @@
+#status {
+  position:relative;
+  left:30px;
+  color:black;
+  font-family:"Times New Roman";
+  font-size: 20px;
+  padding-left: 70px;
+}
+#status2 {
+  position:relative;
+  left:30px;
+  color: black;
+  font-size: 20px;
+}
+#myTable {
+  position:relative;
+  left:30px;
+  margin:20px;
+  border-collapse:collapse;
+  padding-left: 170px;
+  padding-top:20px;
+  font-family:'times new roman';
+  font-size:20px;
+}
+#tableBorder {
+  padding:20px;
+}
+th, td {
+  border:2px solid black;
+  padding:10px;
+}
+#leaderboard {
+	padding-left:170px;
+	padding-top:10px;
+	border-collapse:collapse;
+}

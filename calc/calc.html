@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>calculator</title>
+    <meta name="viewport" content="width=device-width">
+	<style>
+       h1 {text-align: center;}
+       h3 {text-align: center; margin-left : 20px; margin-top: 0px; }
+    </style>
+ </head>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/action_page.js">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <label for="quantity">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
+</form> 
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+</html>

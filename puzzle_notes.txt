@@ -1,0 +1,78 @@
+Dec 1 I think we need a new canvas to make the leaderboard look nice.
+currently there are two canvases with id "myCanvas" and "myMatrix"
+myCanvas is the main puzzle while myMatrix is for the 'stats'
+I think the leaderboard would benefit from being on a third canvas.
+myLeader can be the leaderboard canvas
+
+Nov 21 https://www.zebrose.com/kzgames/top/top.html brings up puzzle images
+Elf image brings up https://www.zebrose.com/kzgames/top/puzzle.html?Elf&$initials BROKE
+remove last '&' https://www.zebrose.com/kzgames/top/puzzle.html?Elf  WORKS
+leaderboard form https://www.zebrose.com/kzgames/lead/myleaderboard.html
+ leaderboard form bring you to https://www.zebrose.com/kzgames/lead/myleaderboard.php?initials=KATE
+    this presents page with 3 lines looking broken -- current website = ... Welcome ?>
+So zebrose.com is pretty broken ... I won't touch it until I have something working on my computer
+	
+
+I am testing the puzzle on my local computer.
+file:///C:/Users/kate/Documents/games/puzzle/myleaderboard/myleaderboard.html
+  12/2 works on my local computer 
+  11/21 works for numx=2 then when puzzle solved there is an error at game.js 162 
+    function submitScore(){
+    document.getElementById('initials').setAttribute('value', username);
+	Uncaught TypeError: can't access property "naturalWidth", timg is null
+    onload file:///C:/Users/kate/Documents/games/puzzle/myleaderboard/game.js:55
+
+
+the URL for opening top.html with initials
+file:///C:/Users/kate/Documents/games/puzzle/top/top.html?initials=xyz
+  this URL presents the top page with a greeting for xyz, perfect
+puzzle does not work!
+  
+file:///C:/Users/kate/Documents/games/puzzle/top/javascriptForm.html
+  this URL presents a form asking for First Name and responds with 'Welcome xyz' after the form is submitted
+  the welcome screen is on zebrose.com@https://zebrose.com/boodryspin/game0/WelcomeFormAction.php
+  It leave poor xyz hanging with no path to the puzzle
+  
+  I also has lots of attempts on the server...
+https://www.zebrose.com/kzgames/lead/myleaderboard.html
+this one sends you to a deadend welcome message
+
+the https://www.zebrose.com/kzgames/lead
+  directory has lots of files most of which are not required for just the leaderboard function
+  this whole directory should be removed once we have the leaderboard function nailed down
+  
+file:///C:/Users/kate/Documents/games/puzzle/leaderboard/myleaderboard.html
+  this is the file that works in that is take the initials and tries to processes them
+  unfortunately it fails in passing them on to the welcome screen
+  
+  on my local computer there are 2 leaderboard directories
+  
+  puzzle/leaderboard  AND puzzle/top/leaderboard
+  
+ the 'top' directory has a subdirectory with another leaderboard directory and another myleaderboard.html!!
+  
+    file:///C:/Users/kate/Documents/games/puzzle/top/leaderboard/simpleleaderboard/myleaderboard.html
+	https://www.zebrose.com/kzgames/top/lead/myleaderboard.html
+  
+  The above link works in that it takes the users initials and brings the user to an updated top puzzle page.
+  
+  I will try the above on zebrose.com.
+  
+  https://www.zebrose.com/kzgames/top/lead/myleaderboard.html
+      to enter initials
+	  
+	  tbl_puzzle_scores
+	  INITIALS
+	  DATE  auto fill
+	  SCORE
+	  CLICKS
+	  NUM_PIECES
+	  PUZZLE_IMAGE
+	  
+	  tbl_puzzle_scores
+	  
+	  
+  
+  
+  
+  
